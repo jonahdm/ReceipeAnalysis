@@ -1,9 +1,10 @@
 import ast
+import pandas as pd
 import streamlit as st
 
 from Dashboard import dashboard_general_functions as dgf
 
-def build(recipe_df):
+def build(recipe_df: pd.DataFrame):
 
     ## Get unique lists from the recipe data. These are used to populate widget selections
     unqiue_recipes = dgf.get_unique_list_from_list(recipe_df['name'].str.strip())

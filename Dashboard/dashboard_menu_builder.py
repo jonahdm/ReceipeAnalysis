@@ -1,4 +1,3 @@
-import ast
 import pandas as pd
 import streamlit as st
 
@@ -34,7 +33,7 @@ def format_course_display(course_index: int) -> str:
     return COURSE_DEFINITIONS[course_index]['displayName']
 
 
-def build(recipe_df):
+def build(recipe_df: pd.DataFrame):
     
     ## Intro header
     st.header('Need help planning the perfect menu?')

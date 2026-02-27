@@ -16,7 +16,7 @@ def build_common_ingredient_chart(common_ingredient_df: pd.DataFrame):
     )
     return common_ingredient_chart
 
-def build(page_summary_dict, common_ingredient_df, recipe_df):
+def build(page_summary_dict: dict, common_ingredient_df: pd.DataFrame, recipe_df: pd.DataFrame):
     
     ## Write top line intro
     st.header(f'There are {page_summary_dict['Recipes']:,} Recipes written by {page_summary_dict['Profiles']:,} Authors on Serious Eats (As of {datetime.fromtimestamp(page_summary_dict['AsOf']):%m/%d/%Y})',

@@ -3,7 +3,6 @@ import curl_cffi
 from datetime import datetime
 import json
 from pathlib import Path
-import random
 import re
 import xmltodict as xtd
 
