@@ -1,0 +1,10 @@
+# DLL
+__pycache__/
+*.pyc
+
+# Environment
+.venv
+
+# All data, except that used by the Dashboard
+/Data/*
+!/Data/SeriousEats/DashboardReady/*
