@@ -7,4 +7,8 @@ __pycache__/
 
 # All data, except that used by the Dashboard
 /Data/*
-!/Data/SeriousEats/DashboardReady/*
+!/Data/SeriousEats/
+
+
+/Data/SeriousEats/*
+!/Data/SeriousEats/DashboardReady/
